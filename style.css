@@ -5,13 +5,7 @@
 /** 
 * 
 * -----------------------------------------------------------------------------
-*
-* Template : Swipy - Creative Agency HTML Template
-* Author : RSTheme
-  Author URI : http://www.rstheme.com/
-*
-* -----------------------------------------------------------------------------
-* 
+
 **//* TABLE OF CONTENT
 ---------------------------------------------------------
 01. General CSS
@@ -206,7 +200,7 @@ h6 {
   background-color: #fbf8ff;
 }
 .blue-bg {
-  background-color: #5F0FC5;
+  background-color: #252525;
 }
 .blue-bg2 {
   background-color: #4f00b2;
@@ -828,7 +822,7 @@ blockquote p {
 }
 .readon.orange {
   padding: 21px 44px 21px 44px;
-  background-color: #FF7425;
+  background-color: #2530bf;
   color: #fff;
   border-radius: 50px 50px 50px 50px;
   font-family: "Jost", Sans-serif;
