@@ -280,6 +280,8 @@
 			</div>
 			<!-- Banner End -->
 
+			
+
 			<!-- About Start -->
 			<div class="rs-about about-style1 pt-140 pb-140 md-pt-80 md-pb-80">
 				<div class="container">
@@ -331,6 +333,10 @@
 		</div> 
 		<!-- Main content End -->
 
+		
+
+		
+
 		<!-- Footer Start -->
 		<footer id="rs-footer" class="rs-footer footer-main-home footer-modify4">
 			<div class="container">
@@ -343,7 +349,7 @@
 							<p class="widget-desc">You will get weekly update on Email</p>
 							<p>
                                 <input type="email" name="email" placeholder="Email Address" required="">
-                                <input type="submit" value="Subscribe">
+                                <input type="submit" value="Subscribe" >
                             </p>
 							<ul class="footer-social md-mb-30">  
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>                     
@@ -398,12 +404,49 @@
             </div>
 		</footer>
 		<!-- Footer End -->
+		
 
 		<!-- start scrollUp  -->
 		<div id="scrollUp" class="blue-color">
 			<i class="fa fa-angle-up"></i>
 		</div>
 		<!-- End scrollUp  -->
+
+		<!--Popup code Start-->
+		<div class="popup">
+			<div class="popcontentbox">
+				<div class="close"></div>
+				<div class="popimgbox">
+					<img src="assets/images/gift.png">
+				</div>
+			    <div class="popcontent">
+					<div>
+				    <h4>Special Offer</h4>
+					<h5>80<sup>%</sup><span> Off</span></h5>
+					<p6>Grab the offer now. Valid till oct-30</p6>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!--Popup code Start-->
+
+		<!--Popup auto load Start-->
+		<script>
+			const popup = document.querySelector('.popup');
+			const close = document.querySelector('.close');
+
+			window.onload = function(){
+				setTimeout(function(){
+					popup.style.display = "block"
+				},2000)
+			}
+
+			close.addEventListener('click',()=>{
+				popup.style.display = "none"
+			})
+		</script>
+
+		<!--Popup auto load Start-->
 
 		
 

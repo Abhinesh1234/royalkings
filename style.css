@@ -8,6 +8,7 @@
 
 **//* TABLE OF CONTENT
 ---------------------------------------------------------
+00. Popup CSS
 01. General CSS
 02. Global Class CSS
 03. Header Section CSS
@@ -44,6 +45,126 @@
 34. Animation Part CSS
 
 --------------------------------------------------------*/
+/* -----------------------------------
+	01. Popup CSS
+-------------------------------------*/
+
+.popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+.popcontentbox{
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.popcontentbox .popimgbox{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popcontentbox .popimgbox ::before{
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #e7ffe0;
+  border-radius: 50%;
+  
+}
+.popcontentbox .popimgbox img{
+  position: relative;
+  max-width: 250px;
+  z-index: 1;
+}
+.popcontentbox .popcontent {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  align-items: center ;
+}
+.popcontentbox .popcontent h4{
+  color: #333;
+  line-height: 1em;
+  font-weight: 300;
+  font-size: 2em;
+}
+.popcontentbox .popcontent h5{
+  font-size: 4em;
+  color: #ff4d54;
+  line-height: 1em;
+}
+.popcontentbox .popcontent h5 span{
+   color: #333;
+   font-size: 0.75em;
+   text-transform: uppercase;
+}
+.popcontentbox .popcontent p6{
+  font-weight: 300;
+}
+.close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #f3f3f3 url(assets/images/close.png);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+/* popup responsive*/
+@media (max-width: 767px){
+  .popcontentbox{
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+  }
+  .popcontentbox .popimgbox{
+    height: 200px;
+    transform: translateY(-50px);
+  }
+
+  .popcontentbox .popimgbox ::before{
+     background: #fff;
+  }
+
+  .popcontentbox .popcontent{
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+  }
+  .close{
+    top: -50px;
+    right: -10px;
+    background: #f3f3f3 url(assets/images/close.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    
+  }
+}
+
+
+
+
 /* -----------------------------------
 	01. General CSS
 -------------------------------------*/
@@ -659,7 +780,7 @@ blockquote p {
 .readon {
   cursor: pointer;
   display: inline-block;
-  position: relative;
+  position: initial;
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
